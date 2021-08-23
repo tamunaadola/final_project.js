@@ -31,6 +31,73 @@
       background: #10233a;
       color: white;
     }
+
+    .service-box {
+      width: 170px;
+      height: 220px;
+      background: #f5f5f5;
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      cursor: pointer;
+    }
+
+    .service-box:hover {
+      background: #182840;
+      color: white;
+    }
+
+    .service-box:hover .service-box-icon {
+      display: none;
+    }
+
+    .service-box-icon {
+      font-size: 45px;
+      margin-bottom: 8px;
+    }
+
+    .service-box-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .service-box-text {
+      padding: 0 18px;
+      display: none;
+    }
+
+    .service-box:hover .service-box-text {
+      display: initial;
+    }
+
+    .rosa-item:hover .rosa-item-title {
+      display: none;
+    }
+
+    .rosa-item {
+      width: 110px;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rosa-item-title {
+      font-size: 90px;
+      cursor: pointer;
+    }
+
+    .rosa-item-text {
+      display: none;
+    }
+
+    .rosa-item:hover .rosa-item-text {
+      display: initial;
+    }
+
   </style>
 </head>
 
@@ -163,10 +230,277 @@
       </div>
     </div>
   </div>
+
+  <div style="display: flex; flex-direction: column; padding: 70px; display: flex; justify-content: center; align-items: center;">
+    <div style="display: flex;">
+      <div class="service-box">
+        <div class="service-box-icon">&#x265B;</div>
+
+        <div class="service-box-title">Graphics Design</div>
+
+        <div class="service-box-text">Lorem ipsum lorem lalula suminoka telopaki jabunki</div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-box-icon">&#xa4;</div>
+
+        <div class="service-box-title">Best Service</div>
+
+        <div class="service-box-text">Lorem ipsum lorem lalula suminoka telopaki jabunki</div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-box-icon">&#x20AA;</div>
+
+        <div class="service-box-title">Pixel perfect</div>
+
+        <div class="service-box-text">Lorem ipsum lorem lalula suminoka telopaki jabunki</div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-box-icon">&#x09F3;</div>
+
+        <div class="service-box-title">Responsive</div>
+
+        <div class="service-box-text">Lorem ipsum lorem lalula suminoka telopaki jabunki</div>
+      </div>
+    </div>
+
+    <div style="display: flex;">
+      <div class="service-box">
+        <div class="service-box-icon">&#x000A9;</div>
+
+        <div class="service-box-title">Graphics Design</div>
+
+        <div class="service-box-text">Lorem ipsum lorem lalula suminoka telopaki jabunki</div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-box-icon">&#x212C;</div>
+
+        <div class="service-box-title">Best Service</div>
+
+        <div class="service-box-text">Lorem ipsum lorem lalula suminoka telopaki jabunki</div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-box-icon">&#x2602;</div>
+
+        <div class="service-box-title">Pixel perfect</div>
+
+        <div class="service-box-text">Lorem ipsum lorem lalula suminoka telopaki jabunki</div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-box-icon">&#x2605;</div>
+
+        <div class="service-box-title">Responsive</div>
+
+        <div class="service-box-text">Lorem ipsum lorem lalula suminoka telopaki jabunki</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: #2c3561; color: white; padding: 50px 0; display: flex; justify-content: center; align-items: center;">
+    <div style="display: flex; width: 70%; justify-content: center; align-items: center;">
+      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+
+      <div>
+        <img style="margin: 0 10px; width: 60px; padding: 10px; border-radius: 50%; border: 1px dashed white" src="profile-face.png" />
+      </div>
+
+      <div style="margin-left: 30px;">
+        <div style="font-size: 35px;">&#x275D;</div>
+
+        <div style="color: #f1163c; margin-bottom: 8px;">Lorem ipsum dolor sit amet, consectetur.</div>
+
+        <div style="font-style: italic; font-weight: bold; font-size: 20px;">Elon Musk</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; margin: 40px 0;">
+    <div style="text-align: center; margin-bottom: 20px; font-size: 35px;">Latest Projects</div>
+
+    <div style="display: flex; justify-content: center;">
+      <div id="projects-list-menu"></div>
+
+      <div id="projects-list"></div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; margin: 80px 0;">
+    <div style="text-align: center; margin-bottom: 20px; font-size: 35px;">Latest Articles</div>
+
+    <div style="display: flex; flex-direction: column;">
+      <div style="display: flex; width: 100%;">
+        <div style="background: rgba(128, 128, 128, 0.048); width: 50%; display: flex; justify-content: center; padding: 40px; padding-top: 35px; flex-direction: column;">
+          <div style="font-size: 40px; padding-bottom: 20px">Graphic Designer</div>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        </div>
+
+        <div style="display: flex; width: 50%;">
+          <div style="text-align: center; writing-mode: vertical-rl; width: 60px; text-orientation: mixed; background: #2c3561; color: white; display: flex; align-items: center; justify-content: center;">2011-2012</div>
+
+          <img style="width: calc(100% - 60px);" src="article-1.jpeg" />
+        </div>
+      </div>
+
+      <div style="display: flex; width: 100%;">
+        <div style="display: flex; width: 50%;">
+          <img style="width: calc(100% - 60px);" src="article-2.jpeg" />
+
+          <div style="text-align: center; writing-mode: vertical-rl; width: 60px; text-orientation: mixed; background: #2c3561; color: white; display: flex; align-items: center; justify-content: center;">2013-2014</div>
+        </div>
+
+        <div style="background: rgba(128, 128, 128, 0.048); width: 50%; display: flex; justify-content: center; padding: 40px; padding-top: 35px; flex-direction: column;">
+          <div style="font-size: 40px; padding-bottom: 20px">Graphic Designer</div>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        </div>
+      </div>
+
+      <div style="display: flex; width: 100%;">
+        <div style="background: rgba(128, 128, 128, 0.048); width: 50%; display: flex; justify-content: center; padding: 40px; padding-top: 35px; flex-direction: column;">
+          <div style="font-size: 40px; padding-bottom: 20px">Graphic Designer</div>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        </div>
+
+        <div style="display: flex; width: 50%;">
+          <div style="text-align: center; writing-mode: vertical-rl; width: 60px; text-orientation: mixed; background: #2c3561; color: white; display: flex; align-items: center; justify-content: center;">2015-2016</div>
+
+          <img style="width: calc(100% - 60px);" src="article-3.jpeg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; margin: 80px 0;">
+    <div style="text-align: center; margin-bottom: 20px; font-size: 35px;">Rosa Team</div>
+
+    <div style="display: flex; padding: 0 40px; justify-content: center; align-items: center;">
+      <div class="rosa-item">
+        <div class="rosa-item-title">&#x2767;</div>
+
+        <div class="rosa-item-text">Lorem Ipsum panckages available</div>
+      </div>
+
+      <div class="rosa-item">
+        <div class="rosa-item-title">&#x210B;</div>
+
+        <div class="rosa-item-text">Lorem Ipsum panckages available</div>
+      </div>
+
+      <div class="rosa-item">
+        <div class="rosa-item-title">&#x2114;</div>
+
+        <div class="rosa-item-text">Lorem Ipsum panckages available</div>
+      </div>
+
+      <div class="rosa-item">
+        <div class="rosa-item-title">&#x2118;</div>
+
+        <div class="rosa-item-text">Lorem Ipsum panckages available</div>
+      </div>
+
+      <div class="rosa-item">
+        <div class="rosa-item-title">&#x212C;</div>
+
+        <div class="rosa-item-text">Lorem Ipsum panckages available</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-top: 100px; position: relative; display: flex; justify-content: center; align-items: center;">
+    <img src="map.jpeg" style="width: 100%;" />
+
+    <div style="position: absolute; font-size: 30px; color: white;">
+      <div>
+        CONTACT US
+      </div>
+
+      <input placeholder="name" id="contact-name" />
+      <input placeholder="email" id="contact-email" />
+      <input placeholder="website" id="contact-website" />
+      <input placeholder="message" id="contact-message" />
+
+      <button onclick="onContact()">Submit</button>
+    </div>
+  </div>
 </div>
 
 <script>
+  var latestProjects = [
+    { name: "Work ideas", photoUrl: "project-1.jpeg" },
+    { name: "Markup", photoUrl: "project-2.jpeg" },
+    { name: "Events", photoUrl: "project-3.jpeg" },
+    { name: "Logo", photoUrl: "project-4.jpeg" },
+    { name: "Presentation", photoUrl: "project-5.jpeg" },
+    { name: "Ideas", photoUrl: "project-6.png" },
+  ]
 
+  let selectedProjectId = null
+
+  const addImages = () => {
+    const listImg = document.getElementById('projects-list')
+
+    listImg.innerHTML = ""
+
+    listImg.style.cssText = "display: grid; grid-template-columns: 1fr 1fr 1fr;"
+
+    latestProjects.filter((elem) => elem.name === selectedProjectId || selectedProjectId === null).forEach(project => {
+      const projectEl = document.createElement('div')
+
+      projectEl.innerHTML = `<img id="${project.name}" src="${project.photoUrl}" style="width: 150px; height: 200px; display: block;" />`
+
+      listImg.appendChild(projectEl)
+    })
+  }
+
+  const onClickProject = (name) => {
+    selectedProjectId = name
+
+    addImages()
+  }
+
+  const list = document.getElementById('projects-list-menu')
+
+  list.style.cssText = "height: fit-content; margin-right: 20px; padding: 20px 30px; background: #2c3561;, color: white;"
+
+  // >>>>
+  const projectEl = document.createElement('div')
+
+  projectEl.innerHTML = `<div style="cursor: pointer; color: white;" onclick="onClickProject(${null})">All</div>`
+
+  list.appendChild(projectEl)
+  // >>>>
+
+  latestProjects.forEach(project => {
+    const projectEl = document.createElement('div')
+
+    projectEl.innerHTML = `<div style="cursor: pointer; color: white;" onclick="onClickProject('${project.name}')">${project.name}</div>`
+
+    list.appendChild(projectEl)
+  })
+
+  // >>>>>>>>>
+
+  addImages()
+
+  // >>>>>>>>>>
+
+  const SERVER_URL = "https://ucha.ge/contact-form/submit.php"
+
+  function onContact() {
+    fetch(SERVER_URL, {
+      method: 'POST',
+      headers: {  'Content-Type': 'application/x-www-form-urlencoded' },
+      body: `&name=${document.getElementById("contact-name").value}&email=${document.getElementById("contact-email").value}&website=${document.getElementById("contact-website").value}&name=${document.getElementById("contact-message").value}`
+    }).then(function(r) {
+      return r.json();
+    }).then(function(r) {
+      console.log(333, r)
+    })
+  }
 </script>
 
 </body>
